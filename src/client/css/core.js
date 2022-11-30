@@ -1,4 +1,5 @@
 // @flow
+import COLORS from '../styled/configs/colors';
 
 const core = `
 html, body, div, span, applet, object, iframe,
@@ -43,6 +44,43 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}`;
+}
+span, h1, h2, h3, h4, h5, h6, p {
+	color: ${COLORS.highlight};
+	font-family: Helvetica;
+}
+p {
+	font-size: 14px;
+	font-weight: 400;
+}
+h1 {
+	font-size: 2em;
+	font-weight: 700;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+h3 {
+	font-size: 1.17em;
+	font-weight: 500;
+}
+h4 {
+	font-size: 1em;
+	font-weight: 500;
+}
+h5 {
+	font-size: 0.83em;
+
+}
+h6 {
+	font-size: 0.75em;
+}
+sub {
+	margin-left: 2px;
+	vertical-align: -25%;
+	font-size: 0.5em;
+}
+`;
 
 export default core;
