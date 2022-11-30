@@ -11,6 +11,7 @@ import thunk from 'redux-thunk';
 import App from './containers/app';
 
 // HELPERS
+import { appendCoreStyles } from './styled/helpers/styles';
 
 // REDUCERS
 import reducer from './reducers';
@@ -22,7 +23,7 @@ middleware.push(createLogger());
 const store = createStore(reducer, applyMiddleware(...middleware));
 
 const initializeApp = () => {
-  // appendstyles()
+  appendCoreStyles()
   const appContainer = document.getElementById('templateReactApplication');
   if (!appContainer) {
     console.log('Application failure at initialization! Unable to find container.');
