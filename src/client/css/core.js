@@ -47,7 +47,7 @@ table {
 }
 span, h1, h2, h3, h4, h5, h6, p {
 	color: ${COLORS.highlight};
-	font-family: Helvetica;
+	font-family: 'Roboto', sans-serif;
 }
 p {
 	font-size: 14px;

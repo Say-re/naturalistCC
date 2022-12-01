@@ -3,11 +3,12 @@ import styled from 'styled-components';
 import COLORS from './configs/colors';
 
 export const PageWrapper: string = styled('div')`
-  background-color: ${COLORS.mainDark};
+  background-color: ${COLORS.darkest};
   ${(props: { windowHeight: string}) => props.windowHeight && `min-height: ${props.windowHeight}px;`};
 `;
 
 export const HeaderWrapper: string = styled('div')`
+  background-color: ${COLORS.mainDark};
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,4 +35,6 @@ export const IconWrapper: string = styled('p')`
   letter-spacing: 1px;
   padding: 15px 5px;
   border: 3px solid ${COLORS.highlight};
+  background-color: ${COLORS.darkest};
+  font-weight: 500;
 `;
