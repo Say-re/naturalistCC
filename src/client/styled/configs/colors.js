@@ -2,10 +2,11 @@
 
 const COLORS: { [key: string]: string } = {
   accent: '#EE6C4D',
-  highlight: '#e0fbfc',
-  mainDark: '#293241',
-  main: '#3d5a80',
-  mainLight: '#98c1d9',
+  highlight: '#E0FBFC',
+  darkest: '#080C10',
+  mainDark: '#0e1f04',
+  main: '#104e1a',
+  mainLight: '#4e6347',
 }
 
 export default COLORS;

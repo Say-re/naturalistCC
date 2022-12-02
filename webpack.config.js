@@ -23,6 +23,10 @@ module.exports = {
         },
       },
       {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
+      {
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ],
       },
@@ -31,7 +35,7 @@ module.exports = {
         use: 'file-loader?name=[name]-[hash:base64:7].[ext]',
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|ttf|woff|woff2)$/,
         use: 'file-loader',
       },
       {
